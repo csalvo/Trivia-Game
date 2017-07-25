@@ -1,0 +1,29 @@
+body {
+  background-image: url(../images/donuts.jpg);
+  font-family: Avenir;
+}
+
+.questions {
+  margin-top: 150px;
+  background-color: #cc8ea1;
+  color: #fff;
+  text-align: center;
+}
+
+#mainButton {
+  background-color: #fff;
+  border: none;
+  color: #d68fb8;
+}
+
+.btn-primary:hover {
+  background-color: #bbb;
+}
+
+#timer {
+  font-size: 50px;
+}
+
+#pun {
+  font-size: 30px;
+}
