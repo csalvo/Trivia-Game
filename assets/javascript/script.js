@@ -29,6 +29,11 @@ var punGame = {
       punGame.incorrect++;
     }
     clearInterval(timer);
+    $("#answer1").hover(function(){
+        $(this).css("background-color", "#cc8ea1");
+        }, function(){
+        $(this).css("background-color", "#cc8ea1");
+        });
     $("#answer1").html("<img src='"+punGame.puns[punGame.currentPunNumber]['picture']+ "'>");
     $("#answer2, #answer3").text("");  
     punGame.currentPunNumber++;
@@ -43,6 +48,11 @@ var punGame = {
       punGame.restart();
     } else {
       punGame.time = 11;
+      $("#answer1, #answer2, #answer3").hover(function(){
+        $(this).css("background-color", "#24ad9f");
+        }, function(){
+        $(this).css("background-color", "#cc8ea1");
+        });
       timer = setInterval(punGame.counter, 1000);
       $("#pun").html(punGame.puns[punGame.currentPunNumber]["question"]);
       $("#answer1").html(punGame.puns[punGame.currentPunNumber]['answer1']);
@@ -60,6 +70,13 @@ var punGame = {
       if (punGame.currentPunNumber < punGame.puns.length) {
         $("#timer").html("Out of time!");
         clearInterval(timer);
+        $("#answer1").hover(function(){
+          $(this).css("background-color", "#cc8ea1");
+          }, function(){
+          $(this).css("background-color", "#cc8ea1");
+          });
+        $("#answer1").html("<img src='"+punGame.puns[punGame.currentPunNumber]['picture']+ "'>");
+        $("#answer2, #answer3").text(""); 
         punGame.currentPunNumber++
           setTimeout(punGame.nextPun, 3000);
       }

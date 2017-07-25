@@ -28,7 +28,3 @@ body {
 #pun {
   font-size: 30px;
 }
-
-#answer1:hover, #answer2:hover, #answer3:hover {
-  background-color: #24ad9f;
-}
